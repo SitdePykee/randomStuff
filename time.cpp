@@ -35,13 +35,6 @@ public:
         cin >> year;
     }
 
-    Date reset(int d, int m, int y)
-    {
-        day = d;
-        month = m;
-        year = y;
-    }
-
     int daysIn()
     {
         switch (month)
@@ -96,23 +89,88 @@ public:
         normalize();
     }
 
+    friend bool operator>(Date, Date);
+    friend bool operator<(Date, Date);
+
     int operator-(Date d2)
     {
         int count = 0;
-        while (day != d2.day || month != d2.month || year != d2.year)
+        Date d1;
+        d1.day = day;
+        d1.month = month;
+        d1.year = year;
+        while (d1.day != d2.day || d1.month != d2.month || d1.year != d2.year)
         {
             count++;
-            d2.day++;
-            d2.normalize();
+            if (d1 > d2)
+            {
+                d2.day++;
+                d2.normalize();
+            }
+            else
+            {
+                d1.day++;
+                d1.normalize();
+            }
+            return count;
         }
-        return count;
     }
 };
 
+bool operator>(Date d1, Date d2)
+{
+    bool ok = false;
+    if (d1.year > d2.year)
+    {
+        ok = true;
+    }
+    else if (d1.year = d2.year)
+    {
+        if (d1.month > d2.month)
+        {
+            ok = true;
+        }
+        else
+        {
+            if (d1.day > d2.day)
+            {
+                ok = true;
+            }
+        }
+    }
+    return (ok);
+}
+
+bool operator<(Date d1, Date d2)
+{
+    bool ok = false;
+    if (d1.year < d2.year)
+    {
+        ok = true;
+    }
+    else if (d1.year = d2.year)
+    {
+        if (d1.month < d2.month)
+        {
+            ok = true;
+        }
+        else
+        {
+            if (d1.day < d2.day)
+            {
+                ok = true;
+            }
+        }
+    }
+    return (ok);
+}
+
 int main()
 {
-    Date a;
+    Date a, b;
     a.nhap();
     a.normalize();
-    a.in();
+    b.nhap();
+    b.normalize();
+    cout << (a > b);
 }
