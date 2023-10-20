@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>20/10</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-white w3-padding w3-card"
+        style="letter-spacing: 4px"
+      >
+        <a class="w3-bar-item w3-button">Happy Vietnamese Woman's Day</a>
+        <div class="w3-right w3-hide-small">
+          <a class="w3-bar-item w3-button">21/12/2023</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-content" style="max-width: 1100px">
+      <div class="w3-row w3-padding-64" id="about">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img
+            src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/46423680_10155918128565509_7473128423708164096_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=hGP9C-b91v0AX9Y8GXT&_nc_ht=scontent.fhan2-3.fna&oh=00_AfBh5aVZyN3OGQyEElo0CCfQFLZ8p69yLx4G9O8yJLKQ1w&oe=65599182"
+            class="w3-round w3-image w3-opacity-min"
+            alt="Table Setting"
+            width="600"
+            height="750"
+          />
+        </div>
+
+        <div class="w3-col m6 w3-padding-large" style="text-align: justify">
+          <h1 class="w3-center">Cô Cao Thị Thu Hương</h1>
+          <br />
+          <h5 class="w3-center">Gửi giảng viên đáng iu của chúng em</h5>
+          <p class="w3-large" style="text-indent: 30px">
+            Những dòng này được viết từ trái tim của những người học trò trân
+            trọng và biết ơn. Khi chúng em lần đầu bước chân vào đại học, cô
+            chính là người giảng viên đã dạy chúng em bài giảng đầu tiên. Bằng
+            cách truyền đạt kiến thức rất nhẹ nhàng và truyền cảm hứng, cô đã để
+            lại cho chúng em rất nhiều bài học đáng nhớ cũng như ấn tượng không
+            thể nào quên về cô. Chúng em cảm ơn cô rất nhiều
+          </p>
+          <p class="w3-large" style="text-indent: 30px">
+            Hôm nay là 21/10 mất rồi, tuy nhiên chúng em vẫn muốn được tặng cô
+            một món quà nhỏ, hi vọng cô sẽ cảm thấy vui vẻ và có thật nhiều sức
+            khỏe để tiếp tục công việc giảng dạy. Trong mắt chúng em, cô luôn là
+            giảng viên đáng yêu nhất NEU. Chúng em mong có thể được gặp cô nhiều
+            hơn nữa ở những môn học trong tương lai :>. Một lần nữa cảm ơn cô
+            rất nhiều.
+          </p>
+          <h3 class="w3-center">Chúc cô 20/10 vui vẻ !!</h2>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-col l6 w3-padding-large">
+          <h1 class="w3-center">Our Menu</h1>
+          <br />
+          <h4>Bread Basket</h4>
+          <p class="w3-text-grey">
+            Assortment of fresh baked fruit breads and muffins 5.50
+          </p>
+          <br />
+
+          <h4>Honey Almond Granola with Fruits</h4>
+          <p class="w3-text-grey">
+            Natural cereal of honey toasted oats, raisins, almonds and dates
+            7.00
+          </p>
+          <br />
+
+          <h4>Belgian Waffle</h4>
+          <p class="w3-text-grey">
+            Vanilla flavored batter with malted flour 7.50
+          </p>
+          <br />
+
+          <h4>Scrambled eggs</h4>
+          <p class="w3-text-grey">
+            Scrambled eggs, roasted red pepper and garlic, with green onions
+            7.50
+          </p>
+          <br />
+
+          <h4>Blueberry Pancakes</h4>
+          <p class="w3-text-grey">
+            With syrup, butter and lots of berries 8.50
+          </p>
+        </div>
+
+        <div class="w3-col l6 w3-padding-large">
+          <img
+            src="/w3images/tablesetting.jpg"
+            class="w3-round w3-image w3-opacity-min"
+            alt="Menu"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>
+        From CS64 with love ❤
+      </p>
+    </footer>
+  </body>
+</html>
